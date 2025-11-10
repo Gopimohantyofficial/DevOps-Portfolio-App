@@ -1,0 +1,16 @@
+# ===== Stage 1: Builder =====
+FROM python:3.11-slim AS builder
+WORKDIR /app
+COPY backend/requirements.txt .
+RUN pip install --upgrade pip \
+    && pip install --user -r requirements.txt
+
+
+# ===== Stage 2: Runtime =====
+FROM python:3.11-slim
+WORKDIR /app
+COPY --from=builder /root/.local /root/.local
+COPY backend /app
+ENV PATH=/root/.local/bin:$PATH
+EXPOSE 5000
+CMD ["gunicorn", "--bind", "0.0.0.0:5000", "wsgi:app"]
