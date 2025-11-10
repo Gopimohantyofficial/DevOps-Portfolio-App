@@ -30,43 +30,46 @@ This project is built to showcase hands-on experience with **Terraform**, **AWS*
 ---
 
 ### 📂 **Repository Structure**
-
-DevOps-Portfolio-App/
-.
-├── app
-│   ├── backend
-│   │   ├── app.py
-│   │   ├── Dockerfile
-│   │   ├── __init__.py
-│   │   ├── requirements.txt
-│   │   └── wsgi.py
-│   ├── docker-compose.yml
-│   ├── Dockerfile
-│   └── frontend
-├── .github
-│   └── workflows
-│       └── ci-cd.yml
-├── .gitignore
-├── LICENSE
-├── monitoring
-│   ├── alertmanager.yml
-│   ├── grafana-dashboard.json
-│   └── prometheus.yml
-├── README.md
-├── scripts
-│   ├── deploy.sh
-│   ├── destroy.sh
-│   └── healthcheck.sh
-└── terraform
-    ├── backend.tf
-    ├── main.tf
-    ├── modules
-    │   ├── compute
-    │   ├── ecr
-    │   ├── network
-    │   └── s3
-    ├── outputs.tf
-    └── variables.tf
+``` 📦 DevOps-Portfolio-App/
+├── 📂 app/
+│ ├── 📂 backend/
+│ │ ├── app.py
+│ │ ├── Dockerfile
+│ │ ├── init.py
+│ │ ├── requirements.txt
+│ │ └── wsgi.py
+│ ├── 📄 docker-compose.yml
+│ ├── 🐳 Dockerfile
+│ └── 📂 frontend/
+│
+├── 📂 .github/
+│ └── 📂 workflows/
+│ └── ci-cd.yml
+│
+├── 📄 .gitignore
+├── 📄 LICENSE
+├── 📂 monitoring/
+│ ├── alertmanager.yml
+│ ├── grafana-dashboard.json
+│ └── prometheus.yml
+│
+├── 📄 README.md
+│
+├── 📂 scripts/
+│ ├── deploy.sh
+│ ├── destroy.sh
+│ └── healthcheck.sh
+│
+└── 📂 terraform/
+├── backend.tf
+├── main.tf
+├── 📂 modules/
+│ ├── compute/
+│ ├── ecr/
+│ ├── network/
+│ └── s3/
+├── outputs.tf
+└── variables.tf ```  
 
 ---
 
