@@ -1,0 +1,42 @@
+
+
+```gitignore
+# Terraform
+*.tfstate
+*.tfstate.*
+crash.log
+terraform.tfvars
+.terraform/
+.terraform.lock.hcl
+
+# Python
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+*.env
+.env
+
+# Node / React
+node_modules/
+build/
+dist/
+npm-debug.log*
+
+# Docker
+*.pid
+*.log
+docker-compose.override.yml
+
+# OS
+.DS_Store
+Thumbs.db
+
+# VSCode / IDE
+.vscode/
+.idea/
+
+# Secrets
+*.pem
+*.key
+secrets.yml
