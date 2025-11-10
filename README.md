@@ -32,34 +32,41 @@ This project is built to showcase hands-on experience with **Terraform**, **AWS*
 ### 📂 **Repository Structure**
 
 DevOps-Portfolio-App/
-├── app/
-│ ├── backend/ # Flask API
-│ ├── frontend/ # React frontend
-│ ├── Dockerfile
-│ └── docker-compose.yml
-│
-├── terraform/ # Infrastructure-as-Code
-│ ├── main.tf
-│ ├── variables.tf
-│ ├── outputs.tf
-│ └── modules/
-│ ├── network/
-│ ├── compute/
-│ ├── ecr/
-│ └── s3/
-│
-├── monitoring/ # Prometheus + Grafana configs
-│ ├── prometheus.yml
-│ ├── grafana-dashboard.json
-│ └── alertmanager.yml
-│
-├── scripts/ # Automation scripts
-│ ├── deploy.sh
-│ ├── destroy.sh
-│ └── healthcheck.sh
-│
-└── .github/workflows/ # CI/CD pipelines
-└── ci-cd.yml
+.
+├── app
+│   ├── backend
+│   │   ├── app.py
+│   │   ├── Dockerfile
+│   │   ├── __init__.py
+│   │   ├── requirements.txt
+│   │   └── wsgi.py
+│   ├── docker-compose.yml
+│   ├── Dockerfile
+│   └── frontend
+├── .github
+│   └── workflows
+│       └── ci-cd.yml
+├── .gitignore
+├── LICENSE
+├── monitoring
+│   ├── alertmanager.yml
+│   ├── grafana-dashboard.json
+│   └── prometheus.yml
+├── README.md
+├── scripts
+│   ├── deploy.sh
+│   ├── destroy.sh
+│   └── healthcheck.sh
+└── terraform
+    ├── backend.tf
+    ├── main.tf
+    ├── modules
+    │   ├── compute
+    │   ├── ecr
+    │   ├── network
+    │   └── s3
+    ├── outputs.tf
+    └── variables.tf
 
 ---
 
